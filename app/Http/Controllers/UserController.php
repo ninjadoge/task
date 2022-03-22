@@ -43,14 +43,4 @@ class UserController extends Controller
         return ['message' => 'Token više nije aktivan'];
 
     }
-    
-    public function test(Request $request){
-        $approval = new PaymentApproval;
-        $approval->user_id = 2;
-        $approval->payment_id = 3;
-        $approval->payment_type = 'travel';
-        $approval->status = 'DISAPPROVED';
-        $approval->save();
-        return $approval;
-    }
 }

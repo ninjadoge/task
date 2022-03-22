@@ -19,9 +19,8 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-// Nezaštićene rute
-// Route::resource('/payments', PaymentController::class);
 
+// Nezaštićene rute
 Route::post('/register',[UserController::class, 'register']);
 
 
